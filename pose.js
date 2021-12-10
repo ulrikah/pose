@@ -18,6 +18,9 @@ function setup() {
   });
   // Hide the video element, and just show the canvas
   video.hide();
+
+  document.querySelector('button').addEventListener('click', () => post('/api/save'));
+
 }
 
 function post(url, data, callback) {
